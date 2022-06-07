@@ -1,4 +1,4 @@
-# translating a latin words
+# translating  latin words
 def pig_latin():
     word = input("word: ").lower()
     if word[0] in "aeiou":
