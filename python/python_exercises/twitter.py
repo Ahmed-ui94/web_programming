@@ -1,7 +1,11 @@
-Input1 = input("Input: ")
 
-for i in "aeouiAEOUI":
-    Input1 = Input1.replace(i,"")
+def twiter():
+    input1 = input("Input: ")
+    st1 = []
+    for st in input1:
+        if st not in 'aeoiuAEOIU':
+            st1.append(st)
+    return ''.join(st1)
    
     
-print('Output: ', Input1)
+print(twiter())

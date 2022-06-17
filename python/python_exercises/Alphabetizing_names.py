@@ -7,5 +7,5 @@ PEOPLE = [
 def get_first_last(person):
     return person['last'], person['first']
 #using lambda function to sort the listed dictionary
-for i in sorted(PEOPLE, key=lambda person: (person['last', ['first']])):
-    print(f'{i["last"]} {i["first"]}: {i["email"]}')
+for persons in sorted(PEOPLE, key=lambda person: (person['last'], person['first'])):
+    print(f'{persons["last"]} {persons["first"]}: {persons["email"]}')
