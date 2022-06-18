@@ -6,19 +6,14 @@ def main():
 
 
 def dollars_to_float(d):
-    for st in d:
-        if st in "$":
-            return "".join(d[1:])
-    return float(d)
+    w = d.removeprefix('$')
+    return float(w)
 
 
 def percent_to_float(p):
-  if p.endswith('%'):
-    return p[:-len(p)]
-  else:
-    return p
-  float(p)
-  return p/100
+  s = p.removesuffix("%")
+  d = float(s)
+  return d/100
 
 
 
