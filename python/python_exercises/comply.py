@@ -1,16 +1,19 @@
-# program to convert a camel case letters to snake case letters
+def main():
+    Camelcase = input("CamelCase: ")
+    print(convert_camel_case(Camelcase))
 
-def change_case(str):
-    res = [str[0].lower()]
-    for c in str[1:]:
-        if c in ('ABCDEFGHIJKLMNOPQRSTUVWXYZ'):
-            res.append('_')
-            res.append(c.lower())
+def convert_camel_case(str):
+    lst = []
+    for i in str:
+        if i.isupper():
+            lst.append("_")
+            ls = i.lower()
+            lst.append(ls)
         else:
-            res.append(c)
-    
-    return ''.join(res)
+            lst.append(i)
+    return ''.join(lst)
 
-str = input("camel case:")
-print(change_case(str))
+if __name__ == "__main__":
+    main()
+
             
