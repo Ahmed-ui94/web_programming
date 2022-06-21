@@ -14,14 +14,15 @@ def guessing_game():
 
         elif user_input < guess_number:
             print("Too low")
+            if number_of_guess <= 0:
+                print("no more chances")
 
         else:
             print("you did it correctly")
             break
         number_of_guess -= 1
     # noticing the user he has utilised his number of chances
-    if number_of_guess <= 0:
-        print("no more chances")
+    
 
 
 def get_userinput():

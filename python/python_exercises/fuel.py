@@ -3,8 +3,7 @@ def main():
     while True:
         try: 
             fractions = input("fractions: ").split("/")
-            x = int(fractions[0])
-            y = int(fractions[1])
+            x, y = int(fractions)
             if y == 0:
                 raise ZeroDivisionError
         except (ValueError, ZeroDivisionError):
