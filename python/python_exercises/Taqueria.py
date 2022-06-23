@@ -13,7 +13,7 @@ Menu = {
 def dish_order():
     while True:
         try:
-            item = input("Item: ")
+            item = input("Item: ").capitalize()
             print("Total: ", Menu[item], "$", sep="")
         except (EOFError, KeyError):
             break
