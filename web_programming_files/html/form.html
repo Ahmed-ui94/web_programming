@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        div {
+            background-color: lightgrey;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            margin-left: 400px;
+            margin-right: 400px;
+            width: 350px;
+            height: 200px;
+            padding-left: 10px;
+            padding-top: 7px;
+            padding-bottom: 14px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/action_page.php" method="get" target="_blank" autocomplete="on" >
+            <caption style="padding-top: 5px;">Cash disbursement allowances</caption><br><br>
+            <label for="fname">First name:</label><br>
+            <input type="text" name="fname" id="fname" required placeholder="provide your first name" >
+            <br><br>
+            <label for="browser">choose your default browser:</label><br>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer"></option>
+                <option value="firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist><br><br>
+            <input type="submit" >
+        </form>
+    </div>
+</body>
+</html>
