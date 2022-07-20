@@ -1,0 +1,14 @@
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    margin-left: 40px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 200px;
+    border-radius: 25px;
+}
+table {
+    border-radius:250px; 
+}
+
