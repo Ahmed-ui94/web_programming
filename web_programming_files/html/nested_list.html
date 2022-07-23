@@ -17,5 +17,16 @@
         </li>
         <li>Milk</li>
     </ul>
+    <p id="demo"></p>
+    <script>
+        let i = 1;
+        let text;
+        while (i <= 10) {
+            text += "<br>the next number is: " + i;
+            i++;
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+    
 </body>
 </html>
