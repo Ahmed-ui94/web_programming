@@ -1,0 +1,14 @@
+form {
+    height: 50%;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    margin-top: 200px;
+    margin-right: 750px;
+    margin-left: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+#f_name {
+    background-color: rgba(249,  237, 237, 0.9);
+}

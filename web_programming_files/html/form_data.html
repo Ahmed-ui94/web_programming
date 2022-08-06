@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form_data.css">
+</head>
+<body>
+    <div>
+    <form id="form" onsubmit="display()">
+        <label for="f_name">Name:</label>
+        <input type="text" name="f_name" id="f_name"> <br>
+        <label for="sex">sex: <br>
+            <input type="radio" name="male" id="male" id="sex">
+            <label for="male">Male</label><br>
+            <input type="radio" name="female" id="female" id="sex">
+            <label for="female">Female</label>
+        </label><br>
+        <label for="Eye_color">Eye color: </label>
+        <input type="color" name="Eye_color" id="Eye_color"><br>
+        <label for="chechbox">Check all that apply</label><br>
+        <input type="checkbox" name="chechbox" id="over 6" id="chechbox">
+        <label for="over 6">Over 6 feet</label><br>
+        <input type="checkbox" name="chechbox" id="chechbox" id="over 200">
+        <label for="over 200">Over 200 pounds</label>
+        <input type="submit" name="submit" id="submit">
+    </form>
+    </div>
+    <script>
+       let name = document.queryselector("#form");
+       document.queryselector("#submit").onsubmit = function() {
+        name.style.backgroundColor = "green";
+       }
+    </script>
+</body>
+</html>
