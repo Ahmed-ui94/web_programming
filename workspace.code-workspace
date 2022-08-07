@@ -3,5 +3,9 @@
         {
             "path": "."
         }
-    ]
+    ],
+    "settings": {
+        "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+        "editor.guides.indentation": true
+    }
 }
