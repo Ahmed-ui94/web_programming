@@ -12,8 +12,11 @@ def is_valid(s):
                 digit1 = s.index(char)
                 if s[digit1:].isdigit() and int(char) != 0:
                     return True
-                return False
-    return True
+                else:
+                    return False
+        return True
+    else:
+        return False
      
 
 
