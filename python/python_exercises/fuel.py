@@ -1,25 +1,28 @@
 
 def main():
-    while True:
-        try: 
-            fractions = input("fractions: ").split("/")
-            x, y = int(fractions)
-            if y == 0:
-                raise ZeroDivisionError
-        except (ValueError, ZeroDivisionError):
-            continue
-        else:
-            return fuel_percent(x, y)
-    
+    fractions = input("fractions (x/y): ").split("/")
+    percentage = convert(fractions)
+    print(gauge(percentage))
+
+
+def convert(fractions):
+     
+    x, y = fractions
+    if y == 0:
+        raise ZeroDivisionError
+    if x > y:
+        raise ValueError
+
+    return (int(x) / int(y)) * 100
+
 #function to convert fraction to percentage
-def fuel_percent(x, y):
-    percent = (x/y) * 100
-    if percent >= 99:
-        print("F")
-    elif percent <= 1:
-        print("E")
+def gauge(percentage):
+    if percentage >= 99:
+        return "F"
+    elif percentage <= 1:
+        return "E"
     else:
-        print(int(percent),'%',sep="")
+        return f'{int(percentage)}%'
 
 
 if __name__ == "__main__":
