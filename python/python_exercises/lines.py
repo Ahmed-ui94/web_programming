@@ -22,10 +22,10 @@ def readlines(path):
 
 # getting the proper file name
 def command_argument():
-    path = sys.argv[1]
-    if not path:
+    path = sys.argv
+    if len(path) != 2:
         sys.exit("Too few command arguments")
-    elif not path.endswith(".py"):
+    elif not path[1].endswith(".py"):
         sys.exit("Not a python file")
     
     return path
