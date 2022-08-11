@@ -1,7 +1,7 @@
 import sys
 
 def main():
-    path = command_argument()   
+    path = command_argument()[1]   
     print(readlines(path))
 
 # function to count the number of lines in a file

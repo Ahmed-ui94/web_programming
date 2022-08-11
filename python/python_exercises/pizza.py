@@ -6,15 +6,15 @@ import csv
 
 # main function 
 def main():
-    path = fileName()
+    path = fileName()[1]
     format_csv_file(path)
 
 #validating user input
 def fileName():
-    path = sys.argv[1]
-    if not path:
+    path = sys.argv
+    if len(path) != 2:
         sys.exit("Too few command arguments")
-    elif not path.endswith(".csv"):
+    elif not path[1].endswith(".csv"):
         sys.exit("Not csv file")
     
     return path
