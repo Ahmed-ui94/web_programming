@@ -18,7 +18,7 @@ def user_input():
    
     return path
 
-
+#clean data and reformat into a new file
 def convertor(path1, path2):
     with open(path1, "r") as file:
         files = csv.DictReader(file)
