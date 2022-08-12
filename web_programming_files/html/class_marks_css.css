@@ -9,6 +9,9 @@ table, tr, td, th{
     border-radius: 25px;
 }
 table {
-    border-radius:250px; 
+    border-radius:250px;
+    margin-right: 200px;
+    margin-left: 400px; 
+    background-color: rgba(242, 8, 8, 0.388);
 }
 
