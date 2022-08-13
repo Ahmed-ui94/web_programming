@@ -1,16 +1,24 @@
+from operator import truediv
 import re, sys
-from unicodedata import name
 
 
 def main():
     print(validate(input("IPv4: ")))
 
+
 def validate(ip):
-    patterun_match = r"^([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]){3}.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]){3}.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]){3}.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]){3}$"
-    if matches := re.search(patterun_match,ip):
-        return f"valid"
+    patterun_match = r"^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$"
+    if matches := re.search(patterun_match, ip):
+        list_of_ip = ip.split(".")
+        for i in list_of_ip:
+            if int(i) < 0 or int(i) > 255:
+                return False
+            
+        return True
     else:
-        return f'invalid'
-    
+        return False
+
+
+
 if __name__ == "__main__":
     main()
