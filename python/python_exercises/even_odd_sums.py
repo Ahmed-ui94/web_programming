@@ -8,4 +8,4 @@ def even_odd_sums(lst):
     my_st.append(odd_position)
     return my_st
 
-print(even_odd_sums([10, 20, 30, 40, 50, 60]))
+print(even_odd_sums((10, 20, 30, 40, 50, 60)))
