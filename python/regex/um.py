@@ -5,7 +5,7 @@ def main():
 
 
 def count(text):
-    if matches := re.findall(r'\b[U|u][M|m]\b', text):
+    if matches := re.findall(r'\bum\b', text, re.I):
         
         return f'{len(matches)}'
 
