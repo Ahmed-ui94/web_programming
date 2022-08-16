@@ -1,14 +1,88 @@
 form {
-    height: 50%;
+    height: 330px;
+    width: 500px;
     background-color: lightgrey;
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin-top: 200px;
     margin-right: 750px;
     margin-left: 250px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
+    font-size: 16px;
 }
 body {
     background-color: rgba(10, 240, 114, 0.603);
+}
+#f_name {
+    width: 350px;
+    margin: 8px;
+    border: 2px solid rgb(242, 159, 159);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px 3px;
+    margin-left: 14px;
+}
+input[type="radio"], input[type='checkbox'] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}
+.sex {
+    width: 20px;
+    margin-left: 90px;
+    margin-top: 13px;
+    padding: 100px;
+    display: inline;
+    
+}
+p {
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+#male {
+    margin-bottom: 8px;
+    margin-left: 35px;
+}
+#female {
+    margin-bottom: 10px;
+}
+#Eye_color {
+    width: 30px;
+    height: 31px;
+    margin-left: 14px;
+    margin-bottom: 8px;
+    
+}
+.checkbox {
+    margin-left: 90px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+#submit {
+    margin-top: 8px;
+    margin-left: 85px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 15px;
+}
+input::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 4;
+}
+.country {
+    margin-left: 35px;
+    margin-top: 8px;
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 20px;
+    width: 200px;
+}
+#select {
+    margin-left: 0px;
+    width: 60px;
+    height: 30px;
 }

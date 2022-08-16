@@ -8,31 +8,27 @@
     <link rel="stylesheet" href="form_data.css">
 </head>
 <body>
-    <div>
+    
     <form id="form" onsubmit="display()">
-        <label for="f_name">Name:</label>
-        <input type="text" name="f_name" id="f_name"> <br>
-        <label for="sex">sex: <br>
-            <input type="radio" name="male" id="male" id="sex">
-            <label for="male">Male</label><br>
-            <input type="radio" name="female" id="female" id="sex">
-            <label for="female">Female</label>
-        </label><br>
-        <label for="Eye_color">Eye color: </label>
+        <label for="f_name"><strong>Full Name</strong></label>
+        <input type="text" name="f_name" id="f_name" placeholder="placeholder"> <br>
+        
+        <label><strong>Gender</strong></label>
+        <input type="radio" name="male" id="male" class="sex">
+        <label for="male">Male</label><br>
+        <input type="radio" name="female" id="female" class="sex">
+        <label for="female">Female</label>
+        <br>
+        <label for="Eye_color"><strong>Eye color</strong> </label>
         <input type="color" name="Eye_color" id="Eye_color"><br>
-        <label for="chechbox">Check all that apply</label><br>
-        <input type="checkbox" name="chechbox" id="over 6" id="chechbox">
+        <p><strong>Check all that applies</strong></p>
+        <input type="checkbox" name="chechbox" id="over 6" class="checkbox">
         <label for="over 6">Over 6 feet</label><br>
-        <input type="checkbox" name="chechbox" id="chechbox" id="over 200">
-        <label for="over 200">Over 200 pounds</label>
-        <input type="submit" name="submit" id="submit">
+        <input type="checkbox" name="chechbox" class="checkbox" id="over 200">
+        <label for="over 200">Over 200 feet </label><br>
+        <input type="submit" name="submit" id="submit" value="Submit Form">
     </form>
-    </div>
-    <script>
-       let name = document.queryselector("#form");
-       document.queryselector("#submit").onsubmit = function() {
-        name.style.backgroundColor = "green";
-       }
-    </script>
+    
+    
 </body>
 </html>
