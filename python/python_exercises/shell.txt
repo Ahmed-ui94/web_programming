@@ -1,0 +1,97 @@
+##
+: ##
+# User Database
+: # User Database
+# 
+: # 
+# Note that this file is consulted directly only when the system is running
+: # Note that this file is consulted directly only when the system is running
+# in single-user mode.  At other times this information is provided by
+: # in single-user mode.  At other times this information is provided by
+# Open Directory.
+: # Open Directory.
+#
+: #
+# See the opendirectoryd(8) man page for additional information about
+: # See the opendirectoryd(8) man page for additional information about
+# Open Directory.
+: # Open Directory.
+##
+: ##
+/usr/bin/false
+: nobody/bin/sh
+: root/usr/bin/false
+: daemon/usr/sbin/uucico
+: _uucp/usr/bin/false
+: _taskgated/usr/bin/false
+: _networkd/usr/bin/false
+: _installassistant/usr/bin/false
+: _lp/usr/bin/false
+: _postfix/usr/bin/false
+: _scsd/usr/bin/false
+: _ces/usr/bin/false
+: _mcxalr/usr/bin/false
+: _appleevents/usr/bin/false
+: _geod/usr/bin/false
+: _serialnumberd/usr/bin/false
+: _devdocs/usr/bin/false
+: _sandbox/usr/bin/false
+: _mdnsresponder/usr/bin/false
+: _ard/usr/bin/false
+: _www/usr/bin/false
+: _eppc/usr/bin/false
+: _cvs/usr/bin/false
+: _svn/usr/bin/false
+: _mysql/usr/bin/false
+: _sshd/usr/bin/false
+: _qtss/usr/bin/false
+: _cyrus/usr/bin/false
+: _mailman/usr/bin/false
+: _appserver/usr/bin/false
+: _clamav/usr/bin/false
+: _amavisd/usr/bin/false
+: _jabber/usr/bin/false
+: _appowner/usr/bin/false
+: _windowserver/usr/bin/false
+: _spotlight/usr/bin/false
+: _tokend/usr/bin/false
+: _securityagent/usr/bin/false
+: _calendar/usr/bin/false
+: _teamsserver/usr/bin/false
+: _update_sharing/usr/bin/false
+: _installer/usr/bin/false
+: _atsserver/usr/bin/false
+: _ftp/usr/bin/false
+: _unknown/usr/bin/false
+: _softwareupdate/usr/bin/false
+: _coreaudiod/usr/bin/false
+: _screensaver/usr/bin/false
+: _locationd/usr/bin/false
+: _trustevaluationagent/usr/bin/false
+: _timezone/usr/bin/false
+: _lda/usr/bin/false
+: _cvmsroot/usr/bin/false
+: _usbmuxd/usr/bin/false
+: _dovecot/usr/bin/false
+: _dpaudio/usr/bin/false
+: _postgres/usr/bin/false
+: _krbtgt/usr/bin/false
+: _kadmin_admin/usr/bin/false
+: _kadmin_changepw/usr/bin/false
+: _devicemgr/usr/bin/false
+: _webauthserver/usr/bin/false
+: _netbios/usr/bin/false
+: _warmd/usr/bin/false
+: _dovenull/usr/bin/false
+: _netstatistics/usr/bin/false
+: _avbdeviced/usr/bin/false
+: _krb_krbtgt/usr/bin/false
+: _krb_kadmin/usr/bin/false
+: _krb_changepw/usr/bin/false
+: _krb_kerberos/usr/bin/false
+: _krb_anonymous/usr/bin/false
+: _assetcache/usr/bin/false
+: _coremediaiod/usr/bin/false
+: _xcsbuildagent/usr/bin/false
+: _xcscredserver/usr/bin/false
+: _launchservicesd
