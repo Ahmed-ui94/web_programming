@@ -38,10 +38,8 @@ def computer_score(word):
         "y": 4,
         "z": 10,
     }
-    list1 = []
-    for i in word.lower():
-        if i.isalpha():
-            list1.append(dict[i])
+    list1 = [dict[i] for i in word.lower() if i.isalpha()]
+    
 
     return sum(list1)
 
