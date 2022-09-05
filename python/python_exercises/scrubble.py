@@ -1,12 +1,13 @@
 def main():
     player1 = computer_score(input("player1: "))
     player2 = computer_score(input("player2: "))
-    
-    #compare and print the 
+
+    # compare and print the
     if player1 > player2:
         print("player1 wins!")
     else:
         print("player2 wins!")
+
 
 # function to compute the syllables in the word
 def computer_score(word):
@@ -39,7 +40,6 @@ def computer_score(word):
         "z": 10,
     }
     list1 = [dict[i] for i in word.lower() if i.isalpha()]
-    
 
     return sum(list1)
 
