@@ -1,21 +1,25 @@
 
 class Animal:
-    def __init__(self, color, number_of_legs) -> None:
+    number_of_legs = 4
+    def __init__(self, color) -> None:
         self.species = self.__class__.__name__
         self.color = color
-        self.number_of_legs = number_of_legs
-    def __str__(self) -> str:
-        return f'{self.species} {self.color} {self.number_of_legs}'
+        
+    def __repr__(self) -> str:
+        return f'{self.species} {self.color} {self.number_of_legs} legs'
 
 
 class FourLeggedAnimal(Animal):
-    def __init__(self, color) -> None:
-        super().__init__(color, 4)
-
+   Animal.__init__
 
 class TwoLeggedAnimal(Animal):
-    def __init__(self, color) -> None:
-        super().__init__(color, 2)
+    number_of_legs = 2
+    Animal.__init__
+
+
+class ZeroLeggedAnimal(Animal):
+    number_of_legs = 0
+    Animal.__init__
 
 
 class sheep(FourLeggedAnimal):
@@ -28,8 +32,51 @@ class Parrot(TwoLeggedAnimal):
     def __init__(self, color) -> None:
         super().__init__(color)
 
+class Snake(ZeroLeggedAnimal):
+    def __init__(self, color) -> None:
+        super().__init__(color)
+    ZeroLeggedAnimal.__repr__
+class Wolf(FourLeggedAnimal):
+    def __init__(self, color) -> None:
+        super().__init__(color)
+
+
+class Cage:
+    def __init__(self, Id) -> None:
+        self.cage_list = []
+        self.Id = Id
+
+
+    def add_animals(self, *animals):
+        for animal in animals:
+            self.cage_list.append(animal)
+
+        return self.cage_list
+
+    def __repr__(self) -> str:
+        output = " ".join(anime.species for anime in self.cage_list)
+        return f"{self.Id}: {output}"
+
+
+
 s = sheep("white")
-print(s)
+s2 = sheep("brown")
+
 
 parrot = Parrot("grey")
-print(parrot)
+p1 = Parrot("white")
+
+
+snake = Snake("black")
+snake2 = Snake("greylish")
+
+
+wolf = Wolf("maroon")
+
+c1 = Cage(1)
+c1.add_animals(s, parrot, snake)
+print(c1)
+
+c2 = Cage(2)
+c2.add_animals(snake2, p1, s2)
+print(c2)
