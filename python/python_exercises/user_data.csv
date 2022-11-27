@@ -1,0 +1,12 @@
+gender female
+name "{'title': 'Mrs', 'first': 'Sedef', 'last': 'Sözeri'}"
+location "{'street': {'number': 2834, 'name': 'Anafartalar Cd'}, 'city': 'Şırnak', 'state': 'Hakkâri', 'country': 'Turkey', 'postcode': 65947, 'coordinates': {'latitude': '74.1770', 'longitude': '44.3501'}, 'timezone': {'offset': '+4:00', 'description': 'Abu Dhabi, Muscat, Baku, Tbilisi'}}"
+email sedef.sozeri@example.com
+login "{'uuid': 'eb7941e5-90ab-4e53-9bef-ecce5800e44c', 'username': 'whiteswan798', 'password': 'uuuuuuu', 'salt': 'dPQ4umhS', 'md5': 'f54e28717e8e6bb6c2943bda4a068228', 'sha1': '9be6bdd32d37d1fba02fa607ce462fadf80317c4', 'sha256': '57e99d67724f1b37e1681c02db70b63ae3c547043b6d649aa936fa72474d191b'}"
+dob "{'date': '1986-06-16T18:58:32.475Z', 'age': 36}"
+registered "{'date': '2017-11-15T17:28:22.376Z', 'age': 5}"
+phone (500)-922-7452
+cell (700)-088-7815
+id "{'name': '', 'value': None}"
+picture "{'large': 'https://randomuser.me/api/portraits/women/32.jpg', 'medium': 'https://randomuser.me/api/portraits/med/women/32.jpg', 'thumbnail': 'https://randomuser.me/api/portraits/thumb/women/32.jpg'}"
+nat TR
